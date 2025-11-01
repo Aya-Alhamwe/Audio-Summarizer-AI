@@ -1,0 +1,9 @@
+# Core AI & ML Libraries
+transformers
+torch
+
+# LangChain (الإصدار القديم المتوافق)
+langchain==0.0.343 
+
+# UI Library
+gradio
