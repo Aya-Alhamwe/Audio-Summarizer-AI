@@ -1,13 +1,13 @@
  
 -----
 
-# 🤖 AI Meeting Companion
+#  AI Meeting Companion
 
-A smart application, built by **Aya Alhamwi**, that transcribes and summarizes meeting audio files. This tool uses `Gradio` for the user interface, `OpenAI's Whisper` for speech-to-text, and a locally-run `Llama 3` (via Ollama) for analysis and summarization.
+A smart application, that transcribes and summarizes meeting audio files. This tool uses `Gradio` for the user interface, `OpenAI's Whisper` for speech-to-text, and a locally-run `Llama 3` (via Ollama) for analysis and summarization.
 
 The application intelligently detects the language of the audio (Arabic or English) and provides a clean, summarized output in the same language.
 
-## ✨ Features
+##  Features
 
   * **Accurate Transcription:** Uses `openai/whisper-small` for high-quality speech-to-text.
   * **AI Summarization:** Leverages the power of `Llama 3` to analyze the transcript and extract key points and decisions.
@@ -17,7 +17,7 @@ The application intelligently detects the language of the audio (Arabic or Engli
 
 -----
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
   * **Frontend (UI):** `Gradio`
   * **Speech-to-Text (STT):** `OpenAI Whisper` (via `transformers`)
@@ -27,7 +27,7 @@ The application intelligently detects the language of the audio (Arabic or Engli
 
 -----
 
-## 📂 Project Structure
+##  Project Structure
 
 Here is the file structure of the project, designed for clarity and scalability:
 
@@ -47,7 +47,7 @@ Business-AI-Companion/
 
 -----
 
-## 🚀 Installation & Setup Guide
+##  Installation & Setup Guide
 
 Follow these steps precisely to set up and run the project on your local machine.
 
