@@ -19,7 +19,7 @@ def process_meeting_audio(audio_file_path):
     if not audio_file_path:
         return "Error: No audio file uploaded."
         
-    # --- Step 1: Convert audio to text (Whisper) ---
+    # Convert audio to text (Whisper) 
     print(f"Processing audio file: {audio_file_path}")
     start_time = time.time()
     transcript = transcribe_audio(audio_file_path)
@@ -29,7 +29,7 @@ def process_meeting_audio(audio_file_path):
     if "Error during transcription" in transcript:
         return transcript
 
-    # --- Step 1.5: Detect text language ---
+    #  Detect text language 
     if contains_arabic(transcript):
         detected_lang = "ar"
         print("Detected language: Arabic (based on characters)")
@@ -37,7 +37,7 @@ def process_meeting_audio(audio_file_path):
         detected_lang = "en"
         print("Detected language: English (default)")
 
-    # --- Step 2: Summarize/analyze text (Llama 3) ---
+    #  Summarize/analyze text (Llama 3)
     start_time = time.time()
     analysis = analyze_text(transcript, detected_lang) 
     llm_time = time.time() - start_time
@@ -82,5 +82,5 @@ iface = gr.Interface(
 # --- Launch the app ---
 if __name__ == "__main__":
     print("Launching Gradio interface...")
-    # يمكنك استخدام 7860 إذا قمت بحل مشكلة البورت العالق
+
     iface.launch(server_name="0.0.0.0", server_port=7861)
