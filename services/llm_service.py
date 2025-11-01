@@ -2,6 +2,7 @@ from langchain.chat_models import ChatOllama
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 import config  
+
 # --- Initialize the language model ---
 def initialize_llm():
     print("Initializing LLM (Ollama/Llama 3 Local)...")
@@ -63,3 +64,4 @@ def analyze_text(context: str, language: str) -> str:
         
     except Exception as e:
         return f"Error during LLM analysis: {e}"
+
